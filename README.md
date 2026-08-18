@@ -12,18 +12,29 @@ A simple C++ based Student Management System developed as a college project.
 ## Technologies Used
 
 - C++
-- Object-Oriented Programming
-- File Handling
+- HTML
+- CSS
+- JavaScript
+
+## Project Structure
+
+- `main.cpp` – C++ Student Management System
+- `index.html` – Web-based Student Portal
+- `README.md` – Project documentation
 
 ## How to Run
 
-1. Download or clone this repository.
-2. Compile the `main.cpp` file using a C++ compiler.
-3. Run the generated executable file.
+### C++ Program
+
+Compile and run `main.cpp` using a C++ compiler.
+
+### Web Portal
+
+Open `index.html` in a web browser.
 
 ## Project Purpose
 
-This project demonstrates basic C++ programming concepts such as classes, functions, arrays, input/output operations, and student data management.
+This project demonstrates student data management using C++ and a simple web-based interface.
 
 ## Author
 
