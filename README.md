@@ -1,28 +1,30 @@
 # Student Management System
 
-A simple Student Management System developed using C++.
+A simple C++ based Student Management System developed as a college project.
 
 ## Features
 
 - Add Student
-- Display Students
+- Display Student Details
 - Search Student
-- Exit
+- Exit the Program
 
-## Technology Used
+## Technologies Used
 
 - C++
-- VS Code
-- GitHub
-
-## Project Description
-
-This project is developed as a college project to manage basic student information such as Student ID, Name, Department, and Age.
+- Object-Oriented Programming
+- File Handling
 
 ## How to Run
 
-Compile the C++ source code and run the executable file.
+1. Download or clone this repository.
+2. Compile the `main.cpp` file using a C++ compiler.
+3. Run the generated executable file.
+
+## Project Purpose
+
+This project demonstrates basic C++ programming concepts such as classes, functions, arrays, input/output operations, and student data management.
 
 ## Author
 
-Manoranjith29
+Mano Ranjith
