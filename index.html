@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+        }
+
+        .header {
+            background: #1f3c88;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        .header p {
+            margin: 8px 0 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 25px auto;
+            padding: 15px;
+        }
+
+        .search-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        input {
+            padding: 12px;
+            width: 220px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 18px;
+            margin: 5px;
+            border: none;
+            border-radius: 6px;
+            background: #1f3c88;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #162d68;
+        }
+
+        #profile {
+            display: none;
+        }
+
+        .card {
+            background: white;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .card h2 {
+            color: #1f3c88;
+            margin-top: 0;
+        }
+
+        .info {
+            line-height: 1.8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #eef2f7;
+        }
+
+        .summary {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .summary-box {
+            flex: 1;
+            min-width: 150px;
+            background: #eef2f7;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>STUDENT MANAGEMENT SYSTEM</h1>
+    <p>Semester 1 Academic Portal</p>
+</div>
+
+<div class="container">
+
+    <div class="search-box">
+        <h2>Search Student</h2>
+
+        <input type="text" id="studentID" placeholder="Enter Student ID">
+
+        <button onclick="searchStudent()">SEARCH</button>
+    </div>
+
+    <div id="profile">
+
+        <div class="card">
+            <h2>👤 Student Portfolio</h2>
+
+            <div class="info">
+                <b>Student ID:</b> 26<br>
+                <b>Name:</b> Devayoshika<br>
+                <b>Department:</b> B.Sc CT<br>
+                <b>Age:</b> 17<br>
+                <b>Semester:</b> 1
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📚 Semester 1 Marks</h2>
+
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Mark</th>
+                </tr>
+
+                <tr>
+                    <td>Tamil</td>
+                    <td>92 / 100</td>
+                </tr>
+
+                <tr>
+                    <td>English</td>
+                    <td>96 / 100</td>
+                </tr>
+
+                <tr>
+                    <td>C++</td>
+                    <td>97 / 100</td>
+                </tr>
+
+                <tr>
+                    <td>DS</td>
+                    <td>99 / 100</td>
+                </tr>
+
+                <tr>
+                    <td>Maths</td>
+                    <td>100 / 100</td>
+                </tr>
+
+                <tr>
+                    <td>EVS</td>
+                    <td>90 / 100</td>
+                </tr>
+            </table>
+
+            <div class="summary">
+
+                <div class="summary-box">
+                    <b>Total</b>
+                    <br>
+                    574 / 600
+                </div>
+
+                <div class="summary-box">
+                    <b>Average</b>
+                    <br>
+                    95.67%
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📅 Semester 1 Attendance</h2>
+
+            <div class="summary">
+
+                <div class="summary-box">
+                    <b>Working Days</b>
+                    <br>
+                    120
+                </div>
+
+                <div class="summary-box">
+                    <b>Present</b>
+                    <br>
+                    119
+                </div>
+
+                <div class="summary-box">
+                    <b>Absent</b>
+                    <br>
+                    1
+                </div>
+
+                <div class="summary-box">
+                    <b>Attendance</b>
+                    <br>
+                    99.17%
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Student Management System © 2026
+    </div>
+
+</div>
+
+<script>
+
+function searchStudent() {
+
+    var id = document.getElementById("studentID").value;
+
+    if (id == "26") {
+
+        document.getElementById("profile").style.display = "block";
+
+    } else {
+
+        alert("Student not found!");
+
+        document.getElementById("profile").style.display = "none";
+    }
+}
+
+</script>
+
+</body>
+</html>
